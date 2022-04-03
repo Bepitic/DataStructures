@@ -13,26 +13,26 @@ class BinaryNode
       this->data = NULL;
     };
 
-    virtual ~BinaryNode ();
+    virtual ~BinaryNode (){};
 
-    BinaryNode *left_child;
-    BinaryNode *right_child;
+    BinaryNode<T> *left_child;
+    BinaryNode<T> *right_child;
 
     void insert(T value){
       if (this->data == NULL) {
-        this->data = value;
+        this->data = &value;
         this->duplicates++;
         this->left_child = new BinaryNode<T>();
         this->right_child = new BinaryNode<T>();
 
       } else {
-        if ( this->data > value) {
+        if ( *this->data > value) {
           this->left_child->insert(value);
 
-        } else if ( this->data < value) {
+        } else if ( *this->data < value) {
           this->right_child->insert(value);
 
-        } else if( this->data == value) {
+        } else if( *this->data == value) {
           this->duplicates++;
 
         }
@@ -58,14 +58,14 @@ class BinaryNode
       }
     }
 
-    BinaryNode* max(){
+    BinaryNode<T>* max(){
       if(this->right_child == NULL){
         return this;
       }
       return this->right_child->max();
     }
 
-    BinaryNode* min(){
+    BinaryNode<T>* min(){
       if(this->left_child == NULL){
         return this;
       }
@@ -73,7 +73,7 @@ class BinaryNode
     }
 
     T getData() {
-      return &data;
+      return this->data;
     }
 
   private:

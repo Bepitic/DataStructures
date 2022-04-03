@@ -1,8 +1,5 @@
 #ifndef BINARYTREE_H
 #define BINARYTREE_H
-
-#define NULL 0
-
 #include "binaryNode.h"
 
 template <typename T>
@@ -11,8 +8,10 @@ class BinaryTree
   private:
     BinaryNode<T>* root;
   public:
-    BinaryTree();
-    virtual ~BinaryTree();
+    BinaryTree(){
+      root = new BinaryNode<T>();
+    }
+    virtual ~BinaryTree(){};
 
     T max(){
       return this->max()->getData();
