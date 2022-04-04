@@ -1,11 +1,11 @@
-#! bin/zsh
+#!/bin/zsh
 
 # set -e
 # set -u
 # set -x
 
 #compile the file
-gpp test_*.cpp
+g++ test_*.cpp -std=c++0x -Wpedantic
 
 
 # take all the input tests iterate through them
@@ -15,5 +15,5 @@ do
   filename="${i%.*}"
 
   # Differ the output expected with the output of the program.
-  diff -u $i.out <(./a.out < $i.in)
+  diff -u $filename.out <(./a.out < $filename.in)
 done

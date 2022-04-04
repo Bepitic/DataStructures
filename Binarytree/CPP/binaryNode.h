@@ -1,6 +1,12 @@
 #ifndef BINARYNODE_H
 #define BINARYNODE_H
+
+#ifndef NULL
 #define NULL 0
+#endif /* NULL */
+
+
+#include <iostream>
 
 template <typename T>
 class BinaryNode
@@ -10,7 +16,7 @@ class BinaryNode
       this->duplicates = -1;
       this->left_child = NULL;
       this->right_child = NULL;
-      this->data = NULL;
+      this->Inicialized = false;
     };
 
     virtual ~BinaryNode (){};
@@ -18,12 +24,14 @@ class BinaryNode
     BinaryNode<T> *left_child;
     BinaryNode<T> *right_child;
 
-    void insert(T value){
-      if (this->data == NULL) {
+    void insert(T& value){
+
+      if (this->Inicialized == false) {
         this->data = value;
         this->duplicates++;
         this->left_child = new BinaryNode<T>();
         this->right_child = new BinaryNode<T>();
+        this->Inicialized = true;
 
       } else {
         if ( this->data > value) {
@@ -49,7 +57,7 @@ class BinaryNode
           //delete this->data;
           this->left_child = NULL;
           this->right_child = NULL;
-          this->data = NULL;
+          this->Inicialized = false;
         }
         this->duplicates--;
 
@@ -63,14 +71,14 @@ class BinaryNode
     }
 
     BinaryNode<T>* max(){
-      if(this->right_child->data == NULL){
+      if(this->right_child->Inicialized == false){
         return this;
       }
       return this->right_child->max();
     }
 
     BinaryNode<T>* min(){
-      if(this->left_child->data == NULL){
+      if(this->left_child->Inicialized == false){
         return this;
       }
       return this->left_child->min();
@@ -83,6 +91,7 @@ class BinaryNode
   private:
     long long duplicates;
     T data;
+    bool Inicialized;
 };
 
 #endif /* BINARYNODE_H */
