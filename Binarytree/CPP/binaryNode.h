@@ -20,19 +20,19 @@ class BinaryNode
 
     void insert(T value){
       if (this->data == NULL) {
-        this->data = &value;
+        this->data = value;
         this->duplicates++;
         this->left_child = new BinaryNode<T>();
         this->right_child = new BinaryNode<T>();
 
       } else {
-        if ( *this->data > value) {
+        if ( this->data > value) {
           this->left_child->insert(value);
 
-        } else if ( *this->data < value) {
+        } else if ( this->data < value) {
           this->right_child->insert(value);
 
-        } else if( *this->data == value) {
+        } else if( this->data == value) {
           this->duplicates++;
 
         }
@@ -40,12 +40,15 @@ class BinaryNode
     }
 
     void remove(T value){
+      
       if(this->data == value){
 
         if(this->duplicates == 0){
-          delete this->right_child;
-          delete this->left_child;
-          delete this->data;
+          //delete this->right_child;
+          //delete this->left_child;
+          //delete this->data;
+          this->left_child = NULL;
+          this->right_child = NULL;
           this->data = NULL;
         }
         this->duplicates--;
@@ -55,18 +58,19 @@ class BinaryNode
 
       } else if( this->data > value){
         this->left_child->remove(value);
+
       }
     }
 
     BinaryNode<T>* max(){
-      if(this->right_child == NULL){
+      if(this->right_child->data == NULL){
         return this;
       }
       return this->right_child->max();
     }
 
     BinaryNode<T>* min(){
-      if(this->left_child == NULL){
+      if(this->left_child->data == NULL){
         return this;
       }
       return this->left_child->min();
@@ -78,7 +82,7 @@ class BinaryNode
 
   private:
     long long duplicates;
-    T* data;
+    T data;
 };
 
 #endif /* BINARYNODE_H */

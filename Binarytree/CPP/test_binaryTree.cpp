@@ -2,19 +2,28 @@
 
 #include "binaryTree.h"
 
- int main(int argc, char *argv[])
- {
-   BinaryTree<int> bst = BinaryTree<int>();
+int main(int argc, char *argv[])
+{
 
-   bst.insert(1);
-   bst.insert(1);
-   bst.insert(2);
-   bst.insert(3);
-   bst.insert(5);
-   bst.insert(5);
-   bst.insert(3);
-   int masimo = bst.max();
-   std::cout << 
-   
-   return 0;
- }
+  int len, len2;
+  std::cin >> len; // elements to insert
+  std::cin >> len2; // size of elements to remove
+  BinaryTree<int> bst = BinaryTree<int>();
+
+  for (int i = 0; i < len; ++i) {
+    int aux;
+    std::cin >> aux;
+    bst.insert(aux);
+  }
+
+  for (int i = 0; i < len2; ++i) {
+    int aux;
+    std::cin >> aux;
+    bst.remove(aux);
+  }
+
+  std::cout << bst.min() << std::endl;
+  std::cout << bst.max() << std::endl;
+
+  return 0;
+}

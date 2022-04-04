@@ -11,13 +11,20 @@ class BinaryTree
     BinaryTree(){
       root = new BinaryNode<T>();
     }
-    virtual ~BinaryTree(){};
+    virtual ~BinaryTree(){
+    }
+
 
     T max(){
-      return this->max()->getData();
+      return this->root->max()->getData();
     }
+
     T min(){
-      return this->min()->getData();
+      return this->root->min()->getData();
+    }
+
+    T rootval(){
+      return this->root->getData();
     }
 
     void insert(T value){
@@ -27,6 +34,7 @@ class BinaryTree
     void remove(T value){
       this->root->remove(value);
     }
+
 
 };
 
