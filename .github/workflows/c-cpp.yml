@@ -13,5 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: TDD permissions
+      run: chmod +x TDD.sh
     - name: TDD
       run: ./TDD.sh
