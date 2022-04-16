@@ -10,9 +10,11 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+      defaults:
+      run:
+        shell: zsh {0}
 
     steps:
     - uses: actions/checkout@v3
     - name: TDD
-      shell: zsh
       run: ./Binarytree/CPP/TDD.sh
