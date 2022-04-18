@@ -68,7 +68,7 @@ class BinaryNode
           if(this->left_child->Inicialized != this->right_child->Inicialized){
 
             if(this->left_child->Inicialized == true){
-              BinaryNode<T> *aux = this->left_child;
+              //BinaryNode<T> *aux = this->left_child;
               this->Inicialized = this->left_child->Inicialized;
               this->data = this->left_child->data;
               this->duplicates = this->left_child->duplicates;
@@ -80,7 +80,7 @@ class BinaryNode
               
             }
             if(this->right_child->Inicialized == true){
-              BinaryNode<T> *aux = this->right_child;
+              //BinaryNode<T> *aux = this->right_child;
               this->Inicialized = this->right_child->Inicialized;
               this->data = this->right_child->data;
               this->duplicates = this->right_child->duplicates;
