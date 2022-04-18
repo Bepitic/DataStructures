@@ -67,7 +67,7 @@ class BinaryNode
 
           if(this->left_child->Inicialized != this->right_child->Inicialized){
 
-            if(this->left_child->Inicialized){
+            if(this->left_child->Inicialized == true){
               BinaryNode<T> *aux = this->left_child;
               this->Inicialized = this->left_child->Inicialized;
               this->data = this->left_child->data;
@@ -79,13 +79,13 @@ class BinaryNode
               return;
               
             }
-            if(this->right_child->Inicialized){
+            if(this->right_child->Inicialized == true){
               BinaryNode<T> *aux = this->right_child;
               this->Inicialized = this->right_child->Inicialized;
               this->data = this->right_child->data;
               this->duplicates = this->right_child->duplicates;
-              this->right_child = this->right_child->right_child;
               this->left_child = this->right_child->left_child;
+              this->right_child = this->right_child->right_child;
               //delete aux->left_child;
               //delete aux->right_child;
               return;
@@ -102,7 +102,7 @@ class BinaryNode
             aux->left_child = NULL;
             aux->right_child = NULL;
             aux->Inicialized = false;
-            aux->duplicates = -2;
+            aux->duplicates = -1;
             return;
           }
 
@@ -110,7 +110,7 @@ class BinaryNode
             this->left_child = NULL;
             this->right_child = NULL;
             this->Inicialized = false;
-            this->duplicates = -5;
+            this->duplicates = -1;
             return;
           }
         }
