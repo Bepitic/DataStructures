@@ -76,14 +76,11 @@ class BinaryNode
               
             }
             if(this->right_child->Inicialized == true){
-              //BinaryNode<T> *aux = this->right_child;
               this->Inicialized = this->right_child->Inicialized;
               this->data = this->right_child->data;
               this->duplicates = this->right_child->duplicates;
               this->left_child = this->right_child->left_child;
               this->right_child = this->right_child->right_child;
-              //delete aux->left_child;
-              //delete aux->right_child;
               return;
             }
           }
