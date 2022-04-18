@@ -5,7 +5,6 @@
 #define NULL 0
 #endif /* NULL */
 
-
 #include <iostream>
 
 template <typename T>
@@ -73,7 +72,7 @@ class BinaryNode
               this->right_child = this->left_child->right_child;
               this->left_child = this->left_child->left_child;
               return;
-              
+
             }
             if(this->right_child->Inicialized == true){
               this->Inicialized = this->right_child->Inicialized;
