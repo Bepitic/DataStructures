@@ -64,18 +64,14 @@ class BinaryNode
 
         if(this->duplicates == 0){
 
-
           if(this->left_child->Inicialized != this->right_child->Inicialized){
 
             if(this->left_child->Inicialized == true){
-              //BinaryNode<T> *aux = this->left_child;
               this->Inicialized = this->left_child->Inicialized;
               this->data = this->left_child->data;
               this->duplicates = this->left_child->duplicates;
               this->right_child = this->left_child->right_child;
               this->left_child = this->left_child->left_child;
-              //delete aux->left_child;
-              //delete aux->right_child;
               return;
               
             }
