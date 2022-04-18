@@ -47,6 +47,17 @@ class BinaryNode
       }
     }
 
+    void print_(){
+      if(this->Inicialized == false){
+        return;
+      }
+      std::cout << "| data: " << this->data << " dup:" << this->duplicates << "  init:";
+      std::cout << this->Inicialized << " " << std::endl;
+      this->left_child->print_();
+      this->right_child->print_();
+    }
+
+
     void remove(T value){
 
       if(this->data == value){
@@ -55,6 +66,7 @@ class BinaryNode
 
 
           if(this->left_child->Inicialized != this->right_child->Inicialized){
+
             if(this->left_child->Inicialized){
               BinaryNode<T> *aux = this->left_child;
               this->Inicialized = this->left_child->Inicialized;
@@ -80,7 +92,8 @@ class BinaryNode
             }
           }
 
-          if(this->left_child->Inicialized && this->right_child->Inicialized && true){
+          if((this->left_child->Inicialized == this->right_child->Inicialized) && (this->left_child->Inicialized == true)){
+
             BinaryNode<T> *aux = this->right_child->min();
             this->Inicialized = true;
             this->duplicates = aux->duplicates;
@@ -89,14 +102,15 @@ class BinaryNode
             aux->left_child = NULL;
             aux->right_child = NULL;
             aux->Inicialized = false;
-            aux->duplicates = -1;
+            aux->duplicates = -2;
             return;
           }
-          if(this->left_child->Inicialized && this->right_child->Inicialized && false){
+
+          if((this->left_child->Inicialized == this->right_child->Inicialized) && (this->left_child->Inicialized == false)){
             this->left_child = NULL;
             this->right_child = NULL;
             this->Inicialized = false;
-            this->duplicates--;
+            this->duplicates = -5;
             return;
           }
         }

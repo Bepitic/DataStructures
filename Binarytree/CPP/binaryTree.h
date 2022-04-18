@@ -2,6 +2,8 @@
 #define BINARYTREE_H
 #include "binaryNode.h"
 
+
+
 template <typename T>
 class BinaryTree
 {
@@ -14,6 +16,9 @@ class BinaryTree
     virtual ~BinaryTree(){
     }
 
+    void print_all(){
+      root->print_();
+    }
 
     T max(){
       return this->root->max()->getData();

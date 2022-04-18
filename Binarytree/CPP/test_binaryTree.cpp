@@ -25,5 +25,7 @@ int main(int argc, char *argv[])
   std::cout << bst.min() << std::endl;
   std::cout << bst.max() << std::endl;
 
+//  bst.print_all();
+
   return 0;
 }
