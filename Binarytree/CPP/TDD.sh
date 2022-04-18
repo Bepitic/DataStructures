@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# set -e
+set -e # exit on the first error with an error
 # set -u
 # set -x
 
