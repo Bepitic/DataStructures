@@ -1,4 +1,4 @@
-name: C++ Build/Test CI
+name: Build_Test
 
 on:
   push:
