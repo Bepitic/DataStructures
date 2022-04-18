@@ -53,7 +53,6 @@ class BinaryNode
 
         if(this->duplicates == 0){
 
-          this->duplicates--; // -1
 
           if(this->left_child->Inicialized != this->right_child->Inicialized){
             if(this->left_child->Inicialized){
@@ -101,6 +100,7 @@ class BinaryNode
             return;
           }
         }
+        this->duplicates--;
 
 
       } else if( this->data < value){
