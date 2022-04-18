@@ -48,12 +48,14 @@ class BinaryNode
     }
 
     void remove(T value){
-      
+
       if(this->data == value){
 
         if(this->duplicates == 0){
-          if(this->left_child->Inicialized != this->right_child->Inicialized){
 
+          this->duplicates--; // -1
+
+          if(this->left_child->Inicialized != this->right_child->Inicialized){
             if(this->left_child->Inicialized){
               BinaryNode<T> *aux = this->left_child;
               this->Inicialized = this->left_child->Inicialized;
@@ -63,6 +65,8 @@ class BinaryNode
               this->left_child = this->left_child->left_child;
               //delete aux->left_child;
               //delete aux->right_child;
+              return;
+              
             }
             if(this->right_child->Inicialized){
               BinaryNode<T> *aux = this->right_child;
@@ -73,20 +77,31 @@ class BinaryNode
               this->left_child = this->right_child->left_child;
               //delete aux->left_child;
               //delete aux->right_child;
+              return;
             }
           }
 
           if(this->left_child->Inicialized && this->right_child->Inicialized && true){
+            BinaryNode<T> *aux = this->right_child->min();
+            this->Inicialized = true;
+            this->duplicates = aux->duplicates;
+            this->data = aux->data;
+
+            aux->left_child = NULL;
+            aux->right_child = NULL;
+            aux->Inicialized = false;
+            aux->duplicates = -1;
+            return;
           }
           if(this->left_child->Inicialized && this->right_child->Inicialized && false){
             this->left_child = NULL;
             this->right_child = NULL;
             this->Inicialized = false;
             this->duplicates--;
+            return;
           }
         }
 
-        this->duplicates--;
 
       } else if( this->data < value){
         this->right_child->remove(value);
