@@ -7,13 +7,23 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  Binary_Search_Tree:
 
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v3
     - name: TDD permissions
-      run: chmod +x TDD.sh
-    - name: TDD check
-      run: ./TDD.sh
+      run: chmod +x ./Binarytree/TDD.sh
+    - name: TDD check BST
+      run: ./Binarytree/TDD.sh
+  Stack:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: TDD permissions
+      run: chmod +x ./Stack/TDD.sh
+    - name: TDD check Stack
+      run: ./Stack/TDD.sh
