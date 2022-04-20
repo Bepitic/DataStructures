@@ -4,42 +4,68 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-BINARYNODE_H	./Binarytree/CPP/binaryNode.h	/^#define BINARYNODE_H$/;"	d
-BINARYTREE_H	./Binarytree/CPP/binaryTree.h	/^#define BINARYTREE_H$/;"	d
-BinaryNode	./Binarytree/CPP/binaryNode.h	/^    BinaryNode (){$/;"	f	class:BinaryNode
-BinaryNode	./Binarytree/CPP/binaryNode.h	/^class BinaryNode$/;"	c
-BinaryTree	./Binarytree/CPP/binaryTree.h	/^    BinaryTree(){$/;"	f	class:BinaryTree
-BinaryTree	./Binarytree/CPP/binaryTree.h	/^class BinaryTree$/;"	c
-Bst	./Binarytree/PYTHON/BinaryTree.py	/^class Bst():$/;"	c
-Bst	./Binarytree/PYTHON/binary_tree.py	/^class Bst():$/;"	c
-Inicialized	./Binarytree/CPP/binaryNode.h	/^    bool Inicialized;$/;"	m	class:BinaryNode
-NULL	./Binarytree/CPP/binaryNode.h	/^#define NULL /;"	d
-__init__	./Binarytree/PYTHON/BinaryTree.py	/^    def __init__(self, item=None, left=None, right=None):$/;"	m	class:Bst
-__init__	./Binarytree/PYTHON/binary_tree.py	/^    def __init__(self, item=None, left=None, right=None, parent=None):$/;"	m	class:Bst
-data	./Binarytree/CPP/binaryNode.h	/^    T data;$/;"	m	class:BinaryNode
-del_l_son	./Binarytree/PYTHON/binary_tree.py	/^    def del_l_son(self):$/;"	m	class:Bst
-del_no_sons	./Binarytree/PYTHON/binary_tree.py	/^    def del_no_sons(self):$/;"	m	class:Bst
-del_r_son	./Binarytree/PYTHON/binary_tree.py	/^    def del_r_son(self):$/;"	m	class:Bst
-del_the_minimun	./Binarytree/PYTHON/binary_tree.py	/^    def del_the_minimun(self):$/;"	m	class:Bst
-del_two_sons	./Binarytree/PYTHON/binary_tree.py	/^    def del_two_sons(self):$/;"	m	class:Bst
-delete	./Binarytree/PYTHON/binary_tree.py	/^    def delete(self, item):$/;"	m	class:Bst
-duplicates	./Binarytree/CPP/binaryNode.h	/^    long long duplicates;$/;"	m	class:BinaryNode
-getData	./Binarytree/CPP/binaryNode.h	/^    T getData() {$/;"	f	class:BinaryNode
-insert	./Binarytree/CPP/binaryNode.h	/^    void insert(T& value){$/;"	f	class:BinaryNode
-insert	./Binarytree/CPP/binaryTree.h	/^    void insert(T value){$/;"	f	class:BinaryTree
-insert	./Binarytree/PYTHON/binary_tree.py	/^    def insert(self, item):$/;"	m	class:Bst
-left_child	./Binarytree/CPP/binaryNode.h	/^    BinaryNode<T> *left_child;$/;"	m	class:BinaryNode
-main	./Binarytree/CPP/test_binaryTree.cpp	/^int main(int argc, char *argv[])$/;"	f
-max	./Binarytree/CPP/binaryNode.h	/^    BinaryNode<T>* max(){$/;"	f	class:BinaryNode
-max	./Binarytree/CPP/binaryTree.h	/^    T max(){$/;"	f	class:BinaryTree
-min	./Binarytree/CPP/binaryNode.h	/^    BinaryNode<T>* min(){$/;"	f	class:BinaryNode
-min	./Binarytree/CPP/binaryTree.h	/^    T min(){$/;"	f	class:BinaryTree
-print_	./Binarytree/CPP/binaryNode.h	/^    void print_(){$/;"	f	class:BinaryNode
-print_all	./Binarytree/CPP/binaryTree.h	/^    void print_all(){$/;"	f	class:BinaryTree
-remove	./Binarytree/CPP/binaryNode.h	/^    void remove(T value){$/;"	f	class:BinaryNode
-remove	./Binarytree/CPP/binaryTree.h	/^    void remove(T value){$/;"	f	class:BinaryTree
-right_child	./Binarytree/CPP/binaryNode.h	/^    BinaryNode<T> *right_child;$/;"	m	class:BinaryNode
-root	./Binarytree/CPP/binaryTree.h	/^    BinaryNode<T>* root;$/;"	m	class:BinaryTree
-rootval	./Binarytree/CPP/binaryTree.h	/^    T rootval(){$/;"	f	class:BinaryTree
-~BinaryNode	./Binarytree/CPP/binaryNode.h	/^    virtual ~BinaryNode (){};$/;"	f	class:BinaryNode
-~BinaryTree	./Binarytree/CPP/binaryTree.h	/^    virtual ~BinaryTree(){$/;"	f	class:BinaryTree
+BINARYNODE_H	Binarytree/CPP/binaryNode.h	/^#define BINARYNODE_H$/;"	d
+BINARYTREE_H	Binarytree/CPP/binaryTree.h	/^#define BINARYTREE_H$/;"	d
+BinaryNode	Binarytree/CPP/binaryNode.h	/^    BinaryNode (){$/;"	f	class:BinaryNode
+BinaryNode	Binarytree/CPP/binaryNode.h	/^class BinaryNode$/;"	c
+BinaryTree	Binarytree/CPP/binaryTree.h	/^    BinaryTree(){$/;"	f	class:BinaryTree
+BinaryTree	Binarytree/CPP/binaryTree.h	/^class BinaryTree$/;"	c
+Bst	Binarytree/PYTHON/BinaryTree.py	/^class Bst():$/;"	c
+Bst	Binarytree/PYTHON/binary_tree.py	/^class Bst():$/;"	c
+Inicialized	Binarytree/CPP/binaryNode.h	/^    bool Inicialized;$/;"	m	class:BinaryNode
+Inicialized	Stack/CPP/stackNode.h	/^    bool Inicialized;$/;"	m	class:StackNode
+NULL	Binarytree/CPP/binaryNode.h	/^#define NULL /;"	d
+NULL	Stack/CPP/stackNode.h	/^#define NULL /;"	d
+STACKNODE_H	Stack/CPP/stackNode.h	/^#define STACKNODE_H$/;"	d
+STACK_H	Stack/CPP/stack.h	/^#define STACK_H$/;"	d
+Stack	Stack/CPP/stack.h	/^    Stack(){$/;"	f	class:Stack
+Stack	Stack/CPP/stack.h	/^class Stack$/;"	c
+StackNode	Stack/CPP/stackNode.h	/^    StackNode (T data){$/;"	f	class:StackNode
+StackNode	Stack/CPP/stackNode.h	/^class StackNode$/;"	c
+__init__	Binarytree/PYTHON/BinaryTree.py	/^    def __init__(self, item=None, left=None, right=None):$/;"	m	class:Bst
+__init__	Binarytree/PYTHON/binary_tree.py	/^    def __init__(self, item=None, left=None, right=None, parent=None):$/;"	m	class:Bst
+clear	Stack/CPP/stack.h	/^    void clear(){$/;"	f	class:Stack
+contains	Stack/CPP/stack.h	/^    bool contains(T value){$/;"	f	class:Stack
+data	Binarytree/CPP/binaryNode.h	/^    T data;$/;"	m	class:BinaryNode
+data	Stack/CPP/stackNode.h	/^    T data;$/;"	m	class:StackNode
+del_l_son	Binarytree/PYTHON/binary_tree.py	/^    def del_l_son(self):$/;"	m	class:Bst
+del_no_sons	Binarytree/PYTHON/binary_tree.py	/^    def del_no_sons(self):$/;"	m	class:Bst
+del_r_son	Binarytree/PYTHON/binary_tree.py	/^    def del_r_son(self):$/;"	m	class:Bst
+del_the_minimun	Binarytree/PYTHON/binary_tree.py	/^    def del_the_minimun(self):$/;"	m	class:Bst
+del_two_sons	Binarytree/PYTHON/binary_tree.py	/^    def del_two_sons(self):$/;"	m	class:Bst
+delete	Binarytree/PYTHON/binary_tree.py	/^    def delete(self, item):$/;"	m	class:Bst
+duplicates	Binarytree/CPP/binaryNode.h	/^    long long duplicates;$/;"	m	class:BinaryNode
+duplicates	Stack/CPP/stackNode.h	/^    long long duplicates;$/;"	m	class:StackNode
+getData	Binarytree/CPP/binaryNode.h	/^    T getData() {$/;"	f	class:BinaryNode
+getData	Stack/CPP/stackNode.h	/^    T getData() {$/;"	f	class:StackNode
+insert	Binarytree/CPP/binaryNode.h	/^    void insert(T& value){$/;"	f	class:BinaryNode
+insert	Binarytree/CPP/binaryTree.h	/^    void insert(T value){$/;"	f	class:BinaryTree
+insert	Binarytree/PYTHON/binary_tree.py	/^    def insert(self, item):$/;"	m	class:Bst
+left_child	Binarytree/CPP/binaryNode.h	/^    BinaryNode<T> *left_child;$/;"	m	class:BinaryNode
+main	Binarytree/CPP/test_binaryTree.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	Stack/CPP/test_stack.cpp	/^int main(int argc, char *argv[])$/;"	f
+max	Binarytree/CPP/binaryNode.h	/^    BinaryNode<T>* max(){$/;"	f	class:BinaryNode
+max	Binarytree/CPP/binaryTree.h	/^    T max(){$/;"	f	class:BinaryTree
+min	Binarytree/CPP/binaryNode.h	/^    BinaryNode<T>* min(){$/;"	f	class:BinaryNode
+min	Binarytree/CPP/binaryTree.h	/^    T min(){$/;"	f	class:BinaryTree
+next	Stack/CPP/stackNode.h	/^    StackNode<T> *next;$/;"	m	class:StackNode
+peek	Stack/CPP/stack.h	/^    T peek(){$/;"	f	class:Stack
+pop	Stack/CPP/stack.h	/^    T pop(){$/;"	f	class:Stack
+pop	Stack/CPP/stackNode.h	/^    StackNode<T> pop(){$/;"	f	class:StackNode
+previous	Stack/CPP/stackNode.h	/^    StackNode<T> *previous;$/;"	m	class:StackNode
+print_	Binarytree/CPP/binaryNode.h	/^    void print_(){$/;"	f	class:BinaryNode
+print_all	Binarytree/CPP/binaryTree.h	/^    void print_all(){$/;"	f	class:BinaryTree
+push	Stack/CPP/stack.h	/^    void push(T value){$/;"	f	class:Stack
+push	Stack/CPP/stackNode.h	/^    StackNode<T> push(T& value){$/;"	f	class:StackNode
+remove	Binarytree/CPP/binaryNode.h	/^    void remove(T value){$/;"	f	class:BinaryNode
+remove	Binarytree/CPP/binaryTree.h	/^    void remove(T value){$/;"	f	class:BinaryTree
+remove	Stack/CPP/stack.h	/^    void remove(T value){$/;"	f	class:Stack
+remove	Stack/CPP/stackNode.h	/^    void remove(T value){$/;"	f	class:StackNode
+right_child	Binarytree/CPP/binaryNode.h	/^    BinaryNode<T> *right_child;$/;"	m	class:BinaryNode
+root	Binarytree/CPP/binaryTree.h	/^    BinaryNode<T>* root;$/;"	m	class:BinaryTree
+root	Stack/CPP/stack.h	/^    Stack<T>* root;$/;"	m	class:Stack
+rootval	Binarytree/CPP/binaryTree.h	/^    T rootval(){$/;"	f	class:BinaryTree
+~BinaryNode	Binarytree/CPP/binaryNode.h	/^    virtual ~BinaryNode (){};$/;"	f	class:BinaryNode
+~BinaryTree	Binarytree/CPP/binaryTree.h	/^    virtual ~BinaryTree(){$/;"	f	class:BinaryTree
+~Stack	Stack/CPP/stack.h	/^    virtual ~Stack(){$/;"	f	class:Stack
+~StackNode	Stack/CPP/stackNode.h	/^    virtual ~StackNode (){};$/;"	f	class:StackNode

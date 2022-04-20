@@ -5,6 +5,16 @@ Pseudocode and implementation of different DataStructures
 Linear:
 
 - [ ] Stack
+    Clear
+    Clone
+    Contains
+    CopyTo
+    GetEnumerator
+    Peek
+    Pop
+    Push
+    Synchronized
+    ToArray
 - [ ] Queue
 - [ ] Linked-List:
   - [ ] single
