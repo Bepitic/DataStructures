@@ -29,8 +29,8 @@ class StackNode
 
     StackNode<T>* push(T& value){
       StackNode<T> *aux = new StackNode<T>(value);
-      this->next = aux;
-      aux->previous = this;
+      this->previous = aux;
+      aux->next = this;
       return aux;
     }
 
