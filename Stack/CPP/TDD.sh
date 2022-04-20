@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 set -e # exit on the first error with an error
 # set -eo pipefail # exit on the first error even in a pipeline
 # set -u
