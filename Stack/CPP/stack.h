@@ -2,8 +2,6 @@
 #define STACK_H
 #include "stackNode.h"
 
-
-
 template <typename T>
 class Stack
 {
