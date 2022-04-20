@@ -16,7 +16,7 @@ jobs:
     - name: TDD permissions
       run: chmod +x ./Binarytree/CPP/TDD.sh
     - name: TDD check BST
-      run: ./Binarytree/CPP/TDD.sh
+      run: (cd ./Binarytree/CPP/ && ./TDD.sh)
   Stack:
 
     runs-on: ubuntu-latest
@@ -26,4 +26,4 @@ jobs:
     - name: TDD permissions
       run: chmod +x ./Stack/CPP/TDD.sh
     - name: TDD check Stack
-      run: ./Stack/CPP/TDD.sh
+      run: (cd ./Stack/CPP/ && ./TDD.sh)
