@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
   for (int i = 0; i < len3; ++i) {
     int aux;
     aux = stack.pop();
-    std::cout << aux << " ";
+    std::cout << aux << std::endl;
   }
 
   for (int i = 0; i < len4; ++i) {
