@@ -14,9 +14,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: TDD permissions
-      run: chmod +x ./Binarytree/TDD.sh
+      run: chmod +x ./Binarytree/CPP/TDD.sh
     - name: TDD check BST
-      run: ./Binarytree/TDD.sh
+      run: ./Binarytree/CPP/TDD.sh
   Stack:
 
     runs-on: ubuntu-latest
@@ -24,6 +24,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: TDD permissions
-      run: chmod +x ./Stack/TDD.sh
+      run: chmod +x ./Stack/CPP/TDD.sh
     - name: TDD check Stack
-      run: ./Stack/TDD.sh
+      run: ./Stack/CPP/TDD.sh
