@@ -1,0 +1,11 @@
+1 0 0 1
+10
+
+
+
+
+1 0 0 0
+| | | > {0/1} -> if wants to peek the last element
+| | >   {0/N} -> number of elements to pop from the stack
+| >     {0/N} -> number of elements to remove from the stack
+>       {0/N} -> number of elements to push into the stack 

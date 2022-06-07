@@ -18,3 +18,6 @@ Non-Linear:
 - [ ] red-black Trees
 - [ ] Double-conected Edge List (Geometry)
 
+Geometrical:
+
+- [ ] DCEL ConvexHull to Delanuay and Voronoy
