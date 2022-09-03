@@ -37,7 +37,7 @@ class StackNode
     StackNode<T>* pop(){
       if(this->Inicialized or this->next == NULL){
 
-        StackNode<T>* aux = this->previous;
+        StackNode<T>* aux = this->next;
         this->previous = NULL;
         this->next = NULL;
         //this->data = NULL;
