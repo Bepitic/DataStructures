@@ -37,7 +37,7 @@ class StackNode
     StackNode<T>* pop(){
       if(this->Inicialized or this->next == NULL){
 
-        StackNode<T>* aux = this->next;
+        StackNode<T>* aux = this->previous;
         this->previous = NULL;
         this->next = NULL;
         //this->data = NULL;
@@ -45,7 +45,7 @@ class StackNode
 
         return aux;
       }
-      return this;
+      return this->next;
     }
 
     void remove(T value){
